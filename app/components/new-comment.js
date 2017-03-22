@@ -3,15 +3,15 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   isShowing: false,
   actions: {
-    updatePost(post) {
+    addComment() {
       var params = {
         title: this.get("title"),
-        author: this.get("author"),
-        body: this.get("body"),
-        img_link: this.get("img_link")
+        name: this.get("name"),
+        comment: this.get("comment"),
+        post: this.get('post')
       };
       this.set('isShowing', false);
-      this.sendAction("updatePost", post, params);
+      this.sendAction("addComment", params);
     },
     showForm() {
       this.set('isShowing', true);

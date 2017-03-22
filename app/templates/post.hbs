@@ -1,12 +1,17 @@
 <div class="image-large">
-  <img src={{model.img_link}} alt={{model.title}}/>
-  <h4>By: {{model.author}}</h4>
+  <img src={{model.post.img_link}} alt={{model.post.title}}/>
+  <h4>By: {{model.post.author}}</h4>
 </div>
-<h2>{{model.title}}</h2><br>
+<h2>{{model.post.title}}</h2><br>
 <p>
-{{model.body}}
+{{model.post.body}}
 </p>
+{{#each model.comments as |comment|}}
+{{comment-display comment=comment}}
+{{/each}}
+<!-- List comments -->
+{{new-comment addComment="addComment" post=model.post}}
 <div class="center">
-{{delete-post post=model deletePost="deletePost"}}<br>
-{{update-post post=model updatePost="updatePost"}}
+{{delete-post post=model.post deletePost="deletePost"}}<br>
+{{update-post post=model.post updatePost="updatePost"}}
 </div>

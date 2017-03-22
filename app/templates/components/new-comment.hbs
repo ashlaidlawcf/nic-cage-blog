@@ -1,0 +1,24 @@
+{{#if isShowing}}
+  <form>
+    <div class="form-group">
+      <label for="title">Title:</label>
+      {{input type="text" value=title class="form-control" placeholder="e.g. Nic Cage Rules!"}}
+    </div>
+    <div class="form-group">
+      <label for="name">Your Name:</label>
+      {{input type="text" value=name class="form-control" placeholder="e.g. My Name"}}
+    </div>
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      {{textarea value=comment class="form-control" placeholder="your comment"}}
+    </div>
+    <div class="right-button">
+      <button {{action "hideForm"}} class="btn btn-sm">Close</button>
+    </div>
+    <div class="center">
+      <button {{action "addComment"}} class="btn btn-sm">Save Comment</button>
+    </div>
+  </form>
+{{else}}
+  <button {{action 'showForm'}} class="btn btn-sm">Leave a Comment</button>
+{{/if}}

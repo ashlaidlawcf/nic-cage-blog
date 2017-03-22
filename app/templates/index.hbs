@@ -3,7 +3,7 @@
     {{add-post addPost="addPost"}}
   </div>
   <hr>
-  {{#each model as |post|}}
+  {{#each model.posts as |post|}}
     {{post-thumbnail post=post}}
   {{/each}}
 </div>

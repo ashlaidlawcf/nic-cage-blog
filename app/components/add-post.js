@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         body: this.get("body"),
         img_link: this.get("img_link"),
         date: today
-      }
+      };
       this.set('isShowing', false);
       this.sendAction("addPost", params);
     },
