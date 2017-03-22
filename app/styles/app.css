@@ -1,5 +1,6 @@
 body {
   background-color: #F7F7F7;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .center {
@@ -13,6 +14,7 @@ body {
 .post_thumbnail {
   height: 250px;
   transition: .3s ease-in-out;
+  margin-bottom: 30px;
 }
 
 .post_thumbnail:hover {
@@ -36,4 +38,18 @@ body {
   width: 85%;
   height: 30%;
   background-color: white;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+footer img {
+  height: 40px;
+}
+
+footer li {
+  display: inline;
+  padding: 10px;
+  list-style: none;
 }

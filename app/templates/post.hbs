@@ -1,0 +1,9 @@
+<div class="image-large">
+  <img src={{model.img_link}} alt={{model.title}}/>
+  <h4>By: {{model.author}}</h4>
+</div>
+<h2>{{model.title}}</h2><br>
+<p>
+{{model.body}}
+</p>
+{{delete-post post=model deletePost="deletePost"}}
