@@ -8,6 +8,11 @@ body {
 
 .post_thumbnail {
   height: 250px;
+  transition: .3s ease-in-out;
+}
+
+.post_thumbnail:hover {
+  opacity: .75;
 }
 
 .img_display {
@@ -15,6 +20,7 @@ body {
   height: 70%;
   overflow: hidden;
 }
+
 
 .img_display img {
   width: 100%;
