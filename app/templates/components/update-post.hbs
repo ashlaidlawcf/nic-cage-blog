@@ -20,9 +20,9 @@
       <button {{action "hideForm"}} class="btn btn-sm">Close</button>
     </div>
     <div class="center">
-      <button {{action "addPost"}} class="btn btn-sm">Add!</button>
+      <button {{action "updatePost" post}} class="btn btn-sm">Save</button>
     </div>
   </form>
 {{else}}
-  <button {{action 'showForm'}} class="btn btn-sm">Add a Post!</button>
+  <button {{action 'showForm'}} class="btn btn-sm">Update this Post</button>
 {{/if}}
