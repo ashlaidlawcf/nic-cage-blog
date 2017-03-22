@@ -1,22 +1,29 @@
-<form>
-  <div class="form-group">
-    <label for="title">Title:</label>
-    {{input type="text" value=title class="form-control" placeholder="e.g. My First Post!"}}
-  </div>
-  <div class="form-group">
-    <label for="author">Author:</label>
-    {{input type="text" value=author class="form-control" placeholder="your name"}}
-  </div>
-  <div class="form-group">
-    <label for="title">Body:</label>
-    {{textarea value=body class="form-control" placeholder="your post"}}
-  </div>
-  <div class="form-group">
-    <label for="title">Image Link:</label>
-    {{input type="text" value=img_link class="form-control" placeholder="hyperlink to image"}}
-  </div>
+{{#if isShowing}}
 
-  <div class="center">
-    <button {{action "addPost"}} class="btn btn-sm">Add!</button>
-  </div>
-</form>
+  <form>
+    <div class="form-group">
+      <label for="title">Title:</label>
+      {{input type="text" value=title class="form-control" placeholder="e.g. My First Post!"}}
+    </div>
+    <div class="form-group">
+      <label for="author">Author:</label>
+      {{input type="text" value=author class="form-control" placeholder="your name"}}
+    </div>
+    <div class="form-group">
+      <label for="title">Body:</label>
+      {{textarea value=body class="form-control" placeholder="your post"}}
+    </div>
+    <div class="form-group">
+      <label for="title">Image Link:</label>
+      {{input type="text" value=img_link class="form-control" placeholder="hyperlink to image"}}
+    </div>
+    <div class="right-button">
+      <button {{action "hideForm"}} class="btn btn-sm">Close</button>
+    </div>
+    <div class="center">
+      <button {{action "addPost"}} class="btn btn-sm">Add!</button>
+    </div>
+  </form>
+{{else}}
+  <button {{action 'showForm'}}>Add a Post!</button>
+{{/if}}

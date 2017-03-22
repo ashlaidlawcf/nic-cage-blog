@@ -1,9 +1,9 @@
 <div class="row">
-{{#each model as |post|}}
-  {{post-thumbnail post=post}}
-{{/each}}
-</div>
-
-<div id="form">
-  {{add-post}}
+  <div id="form">
+    {{add-post addPost="addPost"}}
+  </div>
+  <hr>
+  {{#each model as |post|}}
+    {{post-thumbnail post=post}}
+  {{/each}}
 </div>

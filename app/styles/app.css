@@ -6,6 +6,10 @@ body {
   text-align: center;
 }
 
+.right-button {
+  float: right;
+}
+
 .post_thumbnail {
   height: 250px;
   transition: .3s ease-in-out;
@@ -21,8 +25,8 @@ body {
   overflow: hidden;
 }
 
-
 .img_display img {
+  height: 100%;
   width: 100%;
 }
 

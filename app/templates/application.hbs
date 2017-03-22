@@ -4,12 +4,13 @@
   </header>
 
   <nav class="navbar navbar-default">
-    <ul class="nav navbar-nav">
-      <li>{{#link-to "index"}}Home{{/link-to}}</li>
-      <li>{{#link-to "index"}}Add Post{{/link-to}}</li>
-      <li>{{#link-to "about"}}About{{/link-to}}</li>
-      <li>{{#link-to "contact"}}Contact{{/link-to}}</li>
-    </ul>
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li>{{#link-to "index"}}Home{{/link-to}}</li>
+        <li>{{#link-to "about"}}About{{/link-to}}</li>
+        <li>{{#link-to "contact"}}Contact{{/link-to}}</li>
+      </ul>
+    </div>
   </nav>
   <body>
     {{outlet}}
