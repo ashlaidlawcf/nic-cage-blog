@@ -1,0 +1,21 @@
+{
+  "posts": [{
+    "title": "First Post",
+    "author": "Ash Laidlaw",
+    "body": "This is my first blog post!",
+    "img_link": "http://0.media.collegehumor.cvcdn.com/19/77/5fc452de357b8274afbc6e20be527c48.gif",
+    "date": "2017-03-22T09:00:00"
+  }, {
+    "title": "Second Post",
+    "author": "Zach Swanson",
+    "body": "This is my second blog post!",
+    "img_link": "http://i.imgur.com/vdLE8dJ.gif",
+    "date": "2017-03-22T09:05:00"
+  }, {
+    "title": "Third Post",
+    "author": "John DOe",
+    "body": "This is my third blog post!",
+    "img_link": "https://thechive.files.wordpress.com/2016/07/5cac62b3c3b07cc981cc080d1364adc0.jpg?quality=85&strip=info&w=600&h=443&crop=1",
+    "date": "2017-03-22T09:10:00"
+  }]
+}

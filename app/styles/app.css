@@ -1,3 +1,29 @@
+body {
+  background-color: #F7F7F7;
+}
+
 .center {
   text-align: center;
+}
+
+.post_thumbnail {
+  height: 250px;
+}
+
+.img_display {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+}
+
+.img_display img {
+  width: 100%;
+}
+
+.headline_display {
+  border: 1px solid white;
+  margin: 0 auto;
+  width: 85%;
+  height: 30%;
+  background-color: white;
 }

@@ -1,21 +1,22 @@
+<div class="container">
+  <header class="jumbotron">
+    <h1>Welcome to the Blog</h1>
+  </header>
 
-<header class="jumbotron">
-  <h1>Welcome to the Blog</h1>
-</header>
-
-<nav class="navbar navbar-default">
-  <ul class="nav navbar-nav">
-    <li>{{#link-to "index"}}Home{{/link-to}}</li>
-    <li>{{#link-to "about"}}About{{/link-to}}</li>
-    <li>{{#link-to "contact"}}Contact{{/link-to}}</li>
-  </ul>
-</nav>
-<body>
-  {{outlet}}
-</body>
-<hr>
-<footer>
-  <div class="center">
-    <p>Footer Here</p>
-  </div>
-</footer>
+  <nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+      <li>{{#link-to "index"}}Home{{/link-to}}</li>
+      <li>{{#link-to "about"}}About{{/link-to}}</li>
+      <li>{{#link-to "contact"}}Contact{{/link-to}}</li>
+    </ul>
+  </nav>
+  <body>
+    {{outlet}}
+  </body>
+  <hr>
+  <footer>
+    <div class="center">
+      <h5>Footer</h5>
+    </div>
+  </footer>
+</div>

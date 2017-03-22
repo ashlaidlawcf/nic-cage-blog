@@ -1,1 +1,5 @@
-{{outlet}}
+<div class="row">
+{{#each model as |post|}}
+  {{post-thumbnail post=post}}
+{{/each}}
+</div>
