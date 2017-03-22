@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
     model(params) {
       return Ember.RSVP.hash({
-        post: this.store.findRecord('post', params.post_id, {include: 'comments'}),
+        post: this.store.findRecord('post', params.post_id, {include: 'comments'})
       });
     },
     actions: {
@@ -27,7 +27,7 @@ export default Ember.Route.extend({
         newComment.save().then(function() {
           return post.save();
         });
-        this.transitionTo('post', post);
+        this.transitionToRoute('post', post);
       }
     }
 });

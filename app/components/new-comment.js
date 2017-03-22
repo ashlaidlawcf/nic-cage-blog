@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   isShowing: false,
   actions: {
-    addComment() {
+    addComment(post) {
       var params = {
         title: this.get("title"),
         name: this.get("name"),
@@ -12,6 +12,7 @@ export default Ember.Component.extend({
       };
       this.set('isShowing', false);
       this.sendAction("addComment", params);
+
     },
     showForm() {
       this.set('isShowing', true);
