@@ -17,6 +17,11 @@ body {
   margin-bottom: 30px;
 }
 
+.search_thumbnail {
+  height: 250px;
+  margin-bottom: 30px;
+}
+
 .post_thumbnail:hover {
   opacity: .75;
 }
@@ -24,12 +29,23 @@ body {
 .img_display {
   width: 100%;
   height: 70%;
-  overflow: hidden;
+}
+
+.search_img_display {
+  width: 100%;
+  height: 70%;
 }
 
 .img_display img {
   height: 100%;
   width: 100%;
+  overflow: hidden;
+}
+
+.search_img_display img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .headline_display {

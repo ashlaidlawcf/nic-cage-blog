@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   isShowing: false,
   actions: {
-    addPost() {
+    addPost(gif) {
       var date = new Date();
       var dd = date.getDate();
       var mm = date.getMonth() + 1;
@@ -13,9 +13,10 @@ export default Ember.Component.extend({
         title: this.get("title"),
         author: this.get("author"),
         body: this.get("body"),
-        img_link: this.get("img_link"),
+        img_link: gif.image,
         date: today
       };
+      console.log(params);
       this.set('isShowing', false);
       this.sendAction("addPost", params);
     },

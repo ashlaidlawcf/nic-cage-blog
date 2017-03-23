@@ -1,9 +1,4 @@
-<div class="post_thumbnail col-md-6">
-  {{#link-to "post" post.id}}
-  <div class="img_display">
-    <img src={{gif.image}} alt="gif search result">
-  </div>
-  <div class="headline_display">
+<div class="search_thumbnail col-md-6">
     {{#if isShowing}}
       <form>
         <div class="form-group">
@@ -22,12 +17,13 @@
           <button {{action "hideForm"}} class="btn btn-sm">Close</button>
         </div>
         <div class="center">
-          <button {{action "addPost"}} class="btn btn-sm">Add!</button>
+          <button {{action "addPost" gif}} class="btn btn-sm">Add!</button>
         </div>
       </form>
     {{else}}
-      <button {{action 'showForm'}} class="btn btn-sm">Add a Post!</button>
+    <div class="search_img_display">
+      <img src={{gif.image}} alt="gif search result">
+    </div>
+      <button {{action 'showForm'}} class="btn btn-sm">Post this gif!</button>
     {{/if}}
-  </div>
-  {{/link-to}}
 </div>

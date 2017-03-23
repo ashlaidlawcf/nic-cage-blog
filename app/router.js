@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('contact');
   this.route('post', {path: '/post/:post_id'} );
   this.route('search');
+  this.route('gifSearch');
 });
 
 export default Router;
