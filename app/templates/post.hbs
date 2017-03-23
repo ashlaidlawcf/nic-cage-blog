@@ -7,7 +7,7 @@
 {{model.post.body}}
 </p>
 {{#each model.post.comments as |comment|}}
-  {{comment-display post=model.post comment=comment updateComment="updateComment"}}
+  {{comment-display post=model.post comment=comment updateComment="updateComment" deleteComment="deleteComment"}}
 {{/each}}
 <!-- List comments -->
 {{new-comment addComment="addComment" post=model.post}}
