@@ -1,0 +1,11 @@
+{{log model.gifs}}
+
+{{#each model.gifs as |gif|}}
+  {{gif-display gif=gif}}
+{{else}}
+  <h1>No Data Here!</h1>
+{{/each}}
+
+<!-- {{#each model.gifs as |photo|}}
+{{gif-display gif=photo}}
+{{/each}} -->
