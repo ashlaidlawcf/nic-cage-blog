@@ -28,6 +28,15 @@ export default Ember.Route.extend({
           return post.save();
         });
         this.transitionToRoute('post', post);
+      },
+      updateComment(post, comment, params) {
+        Object.keys(params).forEach(function(key) {
+          if(params[key]!== undefined) {
+            comment.set(key,params[key]);
+          }
+        });
+        comment.save();
+        this.transitionToRoute('post',post);
       }
     }
 });

@@ -1,4 +1,3 @@
-
 {{#if isShowing}}
   <form>
     <div class="form-group">
@@ -17,9 +16,9 @@
       <button {{action "hideForm"}} class="btn btn-sm">Close</button>
     </div>
     <div class="center">
-      <button {{action "addComment"}} class="btn btn-sm">Save Comment</button>
+      <button {{action "updateComment" post comment}} class="btn btn-sm">Save Updates</button>
     </div>
   </form>
 {{else}}
-  <button {{action 'showForm'}} class="btn btn-sm">Leave a Comment</button>
+  <button {{action 'showForm'}} class="btn btn-sm">Edit Comment</button>
 {{/if}}
